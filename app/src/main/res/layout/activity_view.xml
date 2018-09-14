@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.monash.fit4039.fit4039ass2.ViewActivity">
+
+    <TextView
+        android:id="@+id/nameView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="32dp"
+        android:text="TextView"
+        android:textSize="28sp" />
+
+    <TextView
+        android:id="@+id/ageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/nameView"
+        android:layout_below="@+id/nameView"
+        android:layout_marginTop="52dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/speciesView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="TextView"
+        android:layout_below="@+id/ageView"
+        android:layout_alignStart="@+id/ageView"
+        android:layout_alignEnd="@+id/ageView" />
+
+    <TextView
+        android:id="@+id/attackPowerView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/speciesView"
+        android:layout_below="@+id/speciesView"
+        android:layout_marginTop="24dp"
+        android:text="TextView"
+        android:layout_alignStart="@+id/speciesView" />
+
+    <TextView
+        android:id="@+id/healthView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/attackPowerView"
+        android:layout_below="@+id/attackPowerView"
+        android:layout_marginTop="24dp"
+        android:text="TextView"
+        android:layout_alignStart="@+id/attackPowerView" />
+
+    <TextView
+        android:id="@+id/attackValueView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="TextView"
+        android:layout_below="@+id/healthView"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/healthView" />
+</RelativeLayout>

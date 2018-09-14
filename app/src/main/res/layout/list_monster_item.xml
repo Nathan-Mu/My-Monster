@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/ageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="age: 18"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/speciesView" />
+
+    <TextView
+        android:id="@+id/nameView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Monster"
+        android:textSize="30sp"
+        android:layout_alignTop="@+id/ageView"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="16dp" />
+
+    <TextView
+        android:id="@+id/speciesView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Species: evil"
+        android:layout_alignBottom="@+id/nameView"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/attackPowerView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="34dp"
+        android:text="AP:20000"
+        android:layout_alignBaseline="@+id/ageView"
+        android:layout_alignBottom="@+id/ageView"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/healthView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HP:300"
+        android:layout_alignBaseline="@+id/speciesView"
+        android:layout_alignBottom="@+id/speciesView"
+        android:layout_alignStart="@+id/attackPowerView" />
+</RelativeLayout>
